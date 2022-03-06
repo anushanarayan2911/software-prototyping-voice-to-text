@@ -10,8 +10,8 @@ class Model:
             audio_text = r.listen(source)
         
         try:
-            x = r.recognize_google(audio_text)
+            speech = r.recognize_google(audio_text)
         except:
             print("Sorry, I did not get that")
 
-        print(x)
+        return speech

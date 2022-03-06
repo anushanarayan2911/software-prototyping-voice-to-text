@@ -7,5 +7,7 @@ class View:
         self.startButton = Button(self.screen, text = "Start")
         self.startButton.pack()
     
-    def seeScreen(self):
-        self.startButton.pack()
+    def displayInstructions(self, instruction):
+        self.instructionsLabel = Label(self.screen, text = instruction)
+        self.instructionsLabel.pack()
+

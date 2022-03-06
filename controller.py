@@ -9,7 +9,5 @@ class Controller:
         self.view.startButton.bind("<Button>", self.getSpeech)
 
     def getSpeech(self, event):
-        self.model.getSpeech()
-    
-    def seeScreen(self):
-        self.view.seeScreen()
+        speech = self.model.getSpeech()
+        self.view.displayInstructions(speech)
