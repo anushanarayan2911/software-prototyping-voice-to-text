@@ -9,5 +9,6 @@ class Controller:
         self.view.startButton.bind("<Button>", self.getSpeech)
 
     def getSpeech(self, event):
-        speech = self.model.getSpeech()
-        self.view.displayInstructions(speech)
+        #speech = self.model.getSpeech()
+        #self.view.displayInstructions(speech)
+        self.view.displayImage()
