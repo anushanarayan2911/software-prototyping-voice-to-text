@@ -8,12 +8,10 @@ def main():
     screen = Tk()
     screen.title("Voice To Text")
     screen.geometry("500x500")
-
-    '''
+    
     model = Model()
     view = View(screen)
     controller = Controller(model, view)
-    '''
     screen.mainloop()
     
 
