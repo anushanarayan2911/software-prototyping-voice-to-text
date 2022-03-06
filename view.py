@@ -1,3 +1,4 @@
+from email.mime import image
 from tkinter import *
 from PIL import Image
 
@@ -13,16 +14,12 @@ class View:
         self.instructionsLabel = Label(self.screen, text = instruction)
         self.instructionsLabel.pack()
     
-    def displayImage(self): 
-        img = PhotoImage(file="shoes.png")
+    def displayImage(self, imageAddress):
 
-        scaleWidth = 1/2
-        scaleHeight = 1/2
-        img.zoom(10, 2)
+        img = PhotoImage(file = imageAddress)
 
         self.imageLabel = Label(self.screen, image = img)
         self.imageLabel.photo = img
         self.imageLabel.pack()   
-        print("hi")
         
 

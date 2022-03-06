@@ -1,6 +1,7 @@
 from model import Model
 from view import View
 from controller import Controller
+from data import Data
 from tkinter import *
 
 def main(): 
@@ -11,7 +12,8 @@ def main():
     
     model = Model()
     view = View(screen)
-    controller = Controller(model, view)
+    data = Data()
+    controller = Controller(model, view, data)
     screen.mainloop()
     
 
